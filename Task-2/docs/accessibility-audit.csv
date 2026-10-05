@@ -1,0 +1,6 @@
+Issue,Evidence,Severity,Remediation
+ARIA attributes do not match roles,Lighthouse Accessibility report,High,Use ARIA attributes according to the correct element role
+Insufficient color contrast,Lighthouse Accessibility report,High,Improve foreground and background contrast
+Render-blocking requests,Lighthouse Performance report,Medium,Defer non-critical CSS and JavaScript
+Page blocked from indexing,Lighthouse SEO report,Medium,Review robots/noindex configuration
+Missing meta description,Lighthouse SEO report,Medium,Add a relevant meta description
