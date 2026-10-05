@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible enterprise dashboard built using semantic HTML5.">
+    <title>Enterprise Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="components.html">Components</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+
+        <aside aria-label="Sidebar navigation">
+            <h2>Menu</h2>
+
+            <nav aria-label="Sidebar">
+                <ul>
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="dashboard.html">Users</a></li>
+                    <li><a href="components.html">Components</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+
+            <section aria-labelledby="welcome-heading">
+                <h2 id="welcome-heading">Welcome</h2>
+
+                <p>
+                    This dashboard demonstrates semantic HTML5
+                    and accessible component architecture.
+                </p>
+            </section>
+
+            <section aria-labelledby="statistics-heading">
+                <h2 id="statistics-heading">Statistics</h2>
+
+                <article>
+                    <h3>Total Users</h3>
+                    <p>250</p>
+                </article>
+
+                <article>
+                    <h3>Active Users</h3>
+                    <p>180</p>
+                </article>
+
+                <article>
+                    <h3>Pending Users</h3>
+                    <p>20</p>
+                </article>
+            </section>
+
+            <section aria-labelledby="users-heading">
+                <h2 id="users-heading">Recent Users</h2>
+
+                <table>
+                    <caption>Recent registered users</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Indhu Prasath</td>
+                            <td>indhu@example.com</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>Arun Kumar</td>
+                            <td>arun@example.com</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>Priya</td>
+                            <td>priya@example.com</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Enterprise Dashboard. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

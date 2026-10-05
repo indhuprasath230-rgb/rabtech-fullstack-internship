@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible user management dashboard.">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>User Management</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="components.html">Components</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside aria-label="Dashboard menu">
+        <h2>Dashboard Menu</h2>
+
+        <nav aria-label="Dashboard navigation">
+            <ul>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#add-user">Add User</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section id="users" aria-labelledby="user-title">
+            <h2 id="user-title">User List</h2>
+
+            <table>
+                <caption>Registered users</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Indhu Prasath</td>
+                        <td>indhu@example.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Arun Kumar</td>
+                        <td>arun@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-user" aria-labelledby="form-title">
+
+            <h2 id="form-title">Add User</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>User Information</legend>
+
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="role">Role</label>
+
+                        <select id="role" name="role" required>
+                            <option value="">Select role</option>
+                            <option value="admin">Admin</option>
+                            <option value="manager">Manager</option>
+                            <option value="user">User</option>
+                        </select>
+                    </p>
+
+                    <button type="submit">Add User</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Enterprise Dashboard</p>
+    </footer>
+
+</body>
+
+</html>
