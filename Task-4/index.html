@@ -1,0 +1,534 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Responsive enterprise dashboard using modern CSS architecture.">
+
+    <title>Responsive Enterprise Dashboard</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <h1 class="logo">
+                Enterprise Dashboard
+            </h1>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="#overview">Overview</a>
+                <a href="#users">Users</a>
+                <a href="#reports">Reports</a>
+
+                <button id="themeButton" class="theme-button" type="button" aria-label="Toggle dark and light theme">
+                    🌙 Theme
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE LAYOUT ================= -->
+
+    <div class="page-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <h2>Dashboard</h2>
+
+            <nav aria-label="Sidebar navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="#overview">
+                            🏠 Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#users">
+                            👥 Users
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reports">
+                            📊 Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#settings">
+                            ⚙️ Settings
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-content">
+
+
+            <!-- ---------- OVERVIEW ---------- -->
+
+            <section id="overview">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Dashboard
+                        </p>
+
+                        <h2>
+                            Overview
+                        </h2>
+
+                    </div>
+
+                    <button class="primary-button">
+                        + Add User
+                    </button>
+
+                </div>
+
+
+                <!-- ---------- STAT CARDS ---------- -->
+
+                <div class="dashboard-grid">
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                Total Users
+                            </p>
+
+                            <h3>
+                                1,250
+                            </h3>
+
+                            <p class="positive">
+                                ↑ 12% this month
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            📈
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                Active Users
+                            </p>
+
+                            <h3>
+                                980
+                            </h3>
+
+                            <p class="positive">
+                                ↑ 8% this month
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            💰
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                Revenue
+                            </p>
+
+                            <h3>
+                                ₹85,000
+                            </h3>
+
+                            <p class="positive">
+                                ↑ 15% this month
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            ⏳
+                        </div>
+
+                        <div>
+
+                            <p class="card-label">
+                                Pending
+                            </p>
+
+                            <h3>
+                                45
+                            </h3>
+
+                            <p class="negative">
+                                ↓ 3% this month
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= USERS ================= -->
+
+            <section id="users" class="content-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Management
+                        </p>
+
+                        <h2>
+                            Recent Users
+                        </h2>
+
+                    </div>
+
+                    <button class="secondary-button">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <caption class="sr-only">
+                            Recent registered users
+                        </caption>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>#001</td>
+
+                                <td>
+                                    Indhu Prasath
+                                </td>
+
+                                <td>
+                                    indhu@example.com
+                                </td>
+
+                                <td>
+                                    Developer
+                                </td>
+
+                                <td>
+                                    <span class="status active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#002</td>
+
+                                <td>
+                                    Arun Kumar
+                                </td>
+
+                                <td>
+                                    arun@example.com
+                                </td>
+
+                                <td>
+                                    Manager
+                                </td>
+
+                                <td>
+                                    <span class="status active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#003</td>
+
+                                <td>
+                                    Priya
+                                </td>
+
+                                <td>
+                                    priya@example.com
+                                </td>
+
+                                <td>
+                                    Designer
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#004</td>
+
+                                <td>
+                                    Karthik
+                                </td>
+
+                                <td>
+                                    karthik@example.com
+                                </td>
+
+                                <td>
+                                    Developer
+                                </td>
+
+                                <td>
+                                    <span class="status active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= REPORTS ================= -->
+
+            <section id="reports" class="content-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Analytics
+                        </p>
+
+                        <h2>
+                            Reports
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-grid">
+
+                    <article class="report-card">
+
+                        <h3>
+                            Monthly Growth
+                        </h3>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width: 75%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            75% growth achieved
+                        </p>
+
+                    </article>
+
+
+                    <article class="report-card">
+
+                        <h3>
+                            User Engagement
+                        </h3>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width: 60%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            60% engagement rate
+                        </p>
+
+                    </article>
+
+
+                    <article class="report-card">
+
+                        <h3>
+                            Project Completion
+                        </h3>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width: 90%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            90% completed
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SETTINGS ================= -->
+
+            <section id="settings" class="content-section">
+
+                <h2>
+                    Settings
+                </h2>
+
+                <p>
+                    Dashboard settings and preferences.
+                </p>
+
+                <button class="primary-button">
+                    Save Settings
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Enterprise Dashboard |
+            RabTech Academy Internship
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const themeButton =
+            document.getElementById("themeButton");
+
+        themeButton.addEventListener(
+            "click",
+            function () {
+
+                document.body.classList.toggle(
+                    "dark-theme"
+                );
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+```
